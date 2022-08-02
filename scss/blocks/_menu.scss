@@ -1,0 +1,58 @@
+.menu__h3{
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+}
+.menu__ul{
+    display: grid;
+    gap: 60px;
+    grid-template-columns: auto auto auto;
+}
+.menu__li{
+    @include list-style;
+    width: 250px;
+}
+.png{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: #1168AC;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.menu__h4{
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    width: 260px;
+}
+.menu__p{
+    @include paragraph;
+    text-align: center;
+}
+@media only screen and (max-width: $tablet){
+    .menu__h3{
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .menu__ul{
+        gap: 30px;
+    }
+    .menu__li{
+        width: 190px;
+    }
+    .png{
+        width: 70px;
+        height: 70px;
+        padding: 20px;
+    }
+    .menu__h4{
+        font-size: 16px;
+        line-height: 21px;
+        width: 190px;
+    }
+    .menu__p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
